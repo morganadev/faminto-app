@@ -19,4 +19,9 @@ public class ProductController {
 		modelAndView.addObject("produtos",productDAO.findAll());
 		return modelAndView;
 	}
+	@RequestMapping("/form")
+	public ModelAndView form() {
+		ModelAndView modelAndView = new ModelAndView("product/form");
+		return modelAndView;
+	}
 }
