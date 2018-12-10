@@ -6,12 +6,12 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Lista de produto</title>
-<link href="webjars/bootstrap/4.1.3/css/bootstrap.min.css"
+<link href="/webjars/bootstrap/4.1.3/css/bootstrap.min.css"
 	rel="stylesheet">
 </head>
 <body>
 	<table class="table">
-	<p><center>Cardápio</center></p>
+	
 		<thead>
 
 			<tr>
@@ -33,7 +33,7 @@
 		</tbody>
 	</table>
 
-	<script src="webjars/jquery/3.3.1-1/jquery.min.js"></script>
-	<script src="webjars/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<script src="/webjars/jquery/3.3.1-1/jquery.min.js"></script>
+	<script src="/webjars/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </body>
 </html>
