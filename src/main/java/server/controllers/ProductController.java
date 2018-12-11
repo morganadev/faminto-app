@@ -14,23 +14,25 @@ import server.models.Product;
 public class ProductController {
 	@Autowired
 	private ProductDAO productDAO;
-	@RequestMapping(method=RequestMethod.GET)
+
+	@RequestMapping(method = RequestMethod.GET)
 	public ModelAndView list() {
 		ModelAndView modelAndView = new ModelAndView("product/list");
-		modelAndView.addObject("produtos",productDAO.findAll());
+		modelAndView.addObject("produtos", productDAO.findAll());
 		return modelAndView;
 	}
-	
-	@RequestMapping(value="/form" ,method = RequestMethod.GET)
+
+	@RequestMapping(value = "/form", method = RequestMethod.GET)
 	public ModelAndView form() {
 		ModelAndView modelAndView = new ModelAndView("product/form");
 		return modelAndView;
 	}
-	@RequestMapping(value="/form",method = RequestMethod.POST)
+
+	@RequestMapping(value = "/form", method = RequestMethod.POST)
 	public ModelAndView save(Product product) {
-		ModelAndView mv = new ModelAndView("redirect:/product");
+		ModelAndView mv = new ModelAndView("redirect:/produtos");
 		productDAO.save(product);
-		
+
 		return mv;
 
 	}
