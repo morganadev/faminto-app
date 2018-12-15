@@ -18,7 +18,7 @@
 			<div class="col-md-4 mb-4">
 				<label for="validationCustom01">Nome do produto</label> <input
 					type="text" class="form-control" id="validationCustom01"
-					placeholder="Insira o nome do produto" name="nome" required>
+					placeholder="Insira o nome do produto" name="nome"  required>
 				<div class="valid-feedback">Looks good!</div>
 			</div>
 		</div>
@@ -26,7 +26,7 @@
 			<div class="col-md-4 mb-3">
 				<label for="validationCustom02">Descrição</label>
 				<textarea rows=3 class="form-control" id="validationCustom02"
-					placeholder="Inclua uma descrição" name="descricao" required></textarea>
+					placeholder="Inclua uma descrição" name="descricao"  required></textarea>
 				<div class="valid-feedback"></div>
 			</div>
 		</div>
