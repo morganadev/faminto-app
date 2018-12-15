@@ -7,16 +7,17 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import server.daos.ProductDAO;
-@RequestMapping("/produtos")
+@RequestMapping("/cardapio")
 @Controller
 public class MenuController {
 	@Autowired
 	private ProductDAO productDAO;
-	@RequestMapping(value = "/cardapio", method = RequestMethod.GET)
+	@RequestMapping( method = RequestMethod.GET)
 	public ModelAndView form() {
 		
 		ModelAndView modelAndView = new ModelAndView("product/cardapio");
-		modelAndView.addObject("produto", productDAO.findAll());
+		modelAndView.addObject("produtos", productDAO.findAll());
 		return modelAndView;
 	}
+	
 }
