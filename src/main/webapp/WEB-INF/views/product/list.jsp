@@ -14,7 +14,7 @@
 	
 		<thead>
 
-			<tr>
+			<tr class = "bg-warning">
 				<th scope="col">ID</th>
 				<th scope="col">Nome</th>
 				<th scope="col">Descrição</th>
@@ -23,16 +23,16 @@
 		</thead>
 		<tbody>
 			<c:forEach items="${produtos }" var="produto">
-				<tr>
-					<th scope="row">${produto.id}</th>
-					<td>${produto.nome}</td>
-					<td>${produto.descricao }</td>
-					<td>R$ ${produto.preco }</td>
+				<tr class = "bg-secondary text-white">
+					<th scope="row" class = "text-warning">${produto.id}</th>
+					<td><strong>${produto.nome}</strong></td>
+					<td><strong>${produto.descricao }</strong></td>
+					<td><strong>R$ ${produto.preco }</strong></td>
 				</tr>
 			</c:forEach>
 		</tbody>
 	</table>
-
+<a class="nav-link" href="./produtos/form">Inserir novo produto</a>
 	<script src="/webjars/jquery/3.3.1-1/jquery.min.js"></script>
 	<script src="/webjars/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </body>
