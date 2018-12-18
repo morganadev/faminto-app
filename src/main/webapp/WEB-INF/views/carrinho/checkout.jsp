@@ -7,9 +7,9 @@
 <meta charset="ISO-8859-1">
 <title>Finalizar pedido</title>
 </head>
-<body>
+
 	<link href="/webjars/bootstrap/4.1.3/css/bootstrap.min.css"
-		rel="stylesheet">
+	rel="stylesheet">
 </head>
 <body>
 	<table class="table">
