@@ -20,10 +20,10 @@
 		<div class="p-3 mb-2" align="center">
 			<div align="left">
 				<h3 class="text-warning"
-					style="font-family: 'Staatliches', cursive; margin-left: 10px;">
+					style="font-family: 'Staatliches', cursive; margin-left: 10px; font-size: 46px;">
 					FAMINTO <img
-						src="https://image.flaticon.com/icons/svg/188/188154.svg"
-						width="40" height="40" alt="Pacman free icon"
+						src="https://cdn.shopify.com/s/files/1/1061/1924/files/Hungry_Face_Emoji.png?9898922749706957214"
+						width="45" height="45" alt="Pacman free icon"
 						title="Pacman free icon"
 						style="margin-left: 10px; margin-right: 30px;">
 				</h3>
@@ -36,14 +36,11 @@
 						src="https://cdn0.iconfinder.com/data/icons/christmas-2200/64/beer-drink-alcohol-food-pub-512.png"
 						width="50" style="margin-left: 18px">
 				</h4>
-				<div align="right">
-					<a href="./checkout"><button
-							class="btn btn-warning mb-5 text-dark">Finalizar
-							Carrinho</button></a>
-				</div>
+
 			</div>
 			<hr class="bg-warning" style="margin-top: 20px; height: 1px"></hr>
 		</div>
+
 		<nav class="navbar navbar-expand-lg navbar-dark col-3 rounded">
 
 			<div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -52,12 +49,16 @@
 							<span class="sr-only">(current)</span>
 					</a></li>
 					<li class="nav-item"><a class="nav-link" href="#">Pedido</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">Carrinho</a>
+					<li class="nav-item"><a class="nav-link" href="./carrinho/checkout">Carrinho</a>
 					</li>
 				</ul>
 			</div>
-		</nav>
 
+		</nav>
+		<div align="right" style="margin-right:10px;">
+			<a href="./carrinho/checkout"><button
+					class="btn btn-warning mb-5 text-dark">Finalizar Carrinho</button></a>
+		</div>
 
 		<div class="row">
 			<c:forEach items="${produtos}" var="produto">

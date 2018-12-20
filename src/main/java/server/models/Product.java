@@ -2,6 +2,7 @@ package server.models;
 
 import java.math.BigDecimal;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -11,6 +12,7 @@ import javax.persistence.Lob;
 public class Product {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY )
+	@Column(name = "produto_id")
 	private Integer id;
 	private String nome;
 	private BigDecimal preco;
