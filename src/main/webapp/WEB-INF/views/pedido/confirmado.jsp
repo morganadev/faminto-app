@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+<%@ include file="../includes/menu.jsp"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,9 +10,9 @@
 	rel="stylesheet">
 </head>
 <body>
-	<div class="card col-6"align="center">
-		<div class="card-header bg-dark text-white"align="center">Pronto!</div>
-		<div class="card-body">
+	<div class="card col-12">
+		<div class="card-header bg-dark text-white" align="center">Pronto!</div>
+		<div class="card-body" align="center">
 			<h5 class="card-title">Compra finalizada</h5>
 			<a href="/" class="btn btn-warning">Voltar para pagina inicial</a>
 		</div>

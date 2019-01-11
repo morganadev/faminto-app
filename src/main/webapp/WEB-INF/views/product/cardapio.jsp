@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ include file="../includes/menu.jsp"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,49 +14,30 @@
 	rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Staatliches"
 	rel="stylesheet">
+<style>
+</style>
 </head>
-<body>
-	<div class="bg-dark">
 
-		<div class="p-3 mb-2" align="center">
-			<div align="left">
-				<h3 class="text-warning"
-					style="font-family: 'Staatliches', cursive; margin-left: 10px; font-size: 46px;">
-					FAMINTO <img
-						src="https://cdn.shopify.com/s/files/1/1061/1924/files/Hungry_Face_Emoji.png?9898922749706957214"
-						width="45" height="45" alt="Pacman free icon"
-						title="Pacman free icon"
-						style="margin-left: 10px; margin-right: 30px;">
-				</h3>
-			</div>
-			<div>
-				<h4 class="bg-white col-3 rounded text-dark">
-					<img
-						src="https://cdn0.iconfinder.com/data/icons/christmas-2200/64/beer-drink-alcohol-food-pub-512.png"
-						width="50" style="margin-right: 18px">CARDÁPIO<img
-						src="https://cdn0.iconfinder.com/data/icons/christmas-2200/64/beer-drink-alcohol-food-pub-512.png"
-						width="50" style="margin-left: 18px">
-				</h4>
+<body class="bg-dark">
+	<div>
 
-			</div>
-			<hr class="bg-warning" style="margin-top: 20px; height: 1px"></hr>
+		<hr class="bg-warning">
+		<div align="center">
+		
+			<h4 class="bg-white col-3 rounded text-dark">
+				<img
+					src="https://cdn0.iconfinder.com/data/icons/christmas-2200/64/beer-drink-alcohol-food-pub-512.png"
+					width="50" style="margin-right: 18px">CARDÁPIO<img
+					src="https://cdn0.iconfinder.com/data/icons/christmas-2200/64/beer-drink-alcohol-food-pub-512.png"
+					width="50" style="margin-left: 18px">
+			</h4>
+
 		</div>
 
-		<nav class="navbar navbar-expand-lg navbar-dark col-3 rounded">
 
-			<div class="collapse navbar-collapse" id="navbarNavDropdown">
-				<ul class="navbar-nav">
-					<li class="nav-item active"><a class="nav-link" href="./">Home
-							<span class="sr-only">(current)</span>
-					</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">Pedido</a></li>
-					<li class="nav-item"><a class="nav-link" href="./carrinho/checkout">Carrinho</a>
-					</li>
-				</ul>
-			</div>
 
-		</nav>
-		<div align="right" style="margin-right:10px;">
+
+		<div align="right" style="margin-right: 10px;">
 			<a href="./carrinho/checkout"><button
 					class="btn btn-warning mb-5 text-dark">Finalizar Carrinho</button></a>
 		</div>
@@ -90,8 +72,9 @@
 				</form>
 			</c:forEach>
 		</div>
-
 	</div>
+
+
 
 
 	<script src="/webjars/jquery/3.3.1-1/jquery.min.js"></script>
